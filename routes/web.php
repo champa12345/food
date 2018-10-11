@@ -14,3 +14,7 @@
 Route::get('', 'HomeController@index');
 Route::get('food_detail', 'DetailClientFootController@index');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
